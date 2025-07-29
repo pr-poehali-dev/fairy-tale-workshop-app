@@ -152,9 +152,7 @@ export default function Index() {
                   <span className="text-white text-2xl">🧚‍♀️</span>
                 </div>
                 <div>
-                  <h2 className="font-caveat text-3xl font-bold text-enchanted-purple">
-                    Волшебный сочинитель
-                  </h2>
+                  <h2 className="font-caveat text-3xl font-bold text-enchanted-purple">Сказочник</h2>
                   <p className="text-lg text-gray-600 font-sans">Создаём сказки вместе ✨</p>
                 </div>
               </div>
