@@ -89,101 +89,62 @@ export default function Index() {
         {/* Шапка с навигацией */}
         <header className="px-8 pb-6">
           <div className="flex justify-center items-center gap-6">
-            <Button 
-              variant="outline" 
-              className="bg-white/90 hover:bg-white text-enchanted-purple border-2 border-enchanted-purple font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <Icon name="BookOpen" size={20} className="mr-3" />
-              Твои сказки
-            </Button>
-            <Button 
-              className="bg-magical-pink hover:bg-magical-pink/90 text-white font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <Icon name="ShoppingCart" size={20} className="mr-3" />
-              Заказать книгу
-            </Button>
-            <Button 
-              variant="outline"
-              className="bg-fairy-green/20 hover:bg-fairy-green/30 text-enchanted-purple border-2 border-fairy-green font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <Icon name="MessageCircle" size={20} className="mr-3" />
-              Телеграм
-            </Button>
+            <div className="relative group">
+              <Button 
+                variant="outline" 
+                className="bg-white/90 hover:bg-white text-enchanted-purple border-2 border-enchanted-purple font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="BookOpen" size={20} className="mr-3" />
+                Твои сказки
+              </Button>
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-enchanted-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+                <div className="font-semibold text-enchanted-purple mb-1">📖 Твои сказки</div>
+                <div className="text-xs leading-relaxed">
+                  Это твой личный сундучок с сокровищами! Каждая сказка будет бережно храниться здесь. 
+                  Названия историй — это волшебные дверцы, коснись любой и сказка откроется! 
+                  Можно отправлять в WhatsApp, Telegram или по почте.
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <Button 
+                className="bg-magical-pink hover:bg-magical-pink/90 text-white font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="ShoppingCart" size={20} className="mr-3" />
+                Заказать книгу
+              </Button>
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-magical-pink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+                <div className="font-semibold text-magical-pink mb-1">🛒 Заказать книгу</div>
+                <div className="text-xs leading-relaxed">
+                  Эта кнопочка — для самого главного волшебства! Открывает дверь в мастерскую добрых книгочеев. 
+                  Превратите свои любимые истории в настоящую книгу с иллюстрациями на качественной бумаге 
+                  и твёрдой обложкой!
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <Button 
+                variant="outline"
+                className="bg-fairy-green/20 hover:bg-fairy-green/30 text-enchanted-purple border-2 border-fairy-green font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="MessageCircle" size={20} className="mr-3" />
+                Телеграм
+              </Button>
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-fairy-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+                <div className="font-semibold text-fairy-green mb-1">TELEGRAM</div>
+                <div className="text-xs leading-relaxed">
+                  А это — волшебный мостик! Если захочется пообщаться с Волшебным сочинителем 
+                  в его уютном домике в Телеграме, эта кнопка мгновенно перенесёт тебя к нему в гости, 
+                  и вы сможете продолжить сочинять сказки уже там!
+                </div>
+              </div>
+            </div>
           </div>
         </header>
 
-        {/* Добро пожаловать в мастерскую */}
-        <div className="px-8 pb-4">
-          <Card className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm shadow-lg border-0 rounded-2xl">
-            <CardContent className="p-6">
-              <div className="text-center mb-4">
-                <h2 className="font-caveat text-3xl font-bold text-enchanted-purple mb-3">
-                  Добро пожаловать в «Мастерскую сказок»!
-                </h2>
-                <div className="max-w-4xl mx-auto text-gray-700 font-sans leading-relaxed space-y-3 text-left">
-                  <p>
-                    Здравствуй, юный мечтатель! Ты попал в волшебное место, где рождаются самые удивительные истории. Наша «Мастерская сказок» — это сказочный уголок в интернете, где живёт Волшебный сочинитель. Это добрый дух, который умеет придумывать приключения, и он очень хочет подружиться с тобой!
-                  </p>
-                  <p>
-                    Посмотри на это окошко для разговоров! Здесь ты можешь поболтать с Волшебным сочинителем, как с лучшим другом. Он спросит у тебя, для кого мы будем сочинять сказку, как зовут главного героя и о чём он мечтает. А потом — раз! — и на ваших глазах родится настоящее чудо, история только для вас!
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mb-4">
-                <h3 className="font-caveat text-xl font-bold text-enchanted-purple mb-3 text-center">
-                  А теперь давай посмотрим, какие волшебные кнопочки есть наверху.
-                </h3>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div className="p-4 bg-white/60 rounded-xl border border-enchanted-purple/20">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon name="BookOpen" size={20} className="text-enchanted-purple" />
-                    <h3 className="font-caveat text-lg font-bold text-enchanted-purple">📖 Твои сказки</h3>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    Это твой личный сундучок с сокровищами! Каждая сказка, которую вы придумаете вместе с Волшебным сочинителем, будет бережно храниться здесь.
-                  </p>
-                  <ul className="text-gray-600 text-xs space-y-1 pl-3">
-                    <li>• Названия историй — это волшебные дверцы. Коснись любой, и сказка тут же откроется!</li>
-                    <li>• Рядом с каждой сказкой будут маленькие иконки для отправки в WhatsApp, Telegram или по почте!</li>
-                  </ul>
-                </div>
-                
-                <div className="p-4 bg-white/60 rounded-xl border border-magical-pink/20">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon name="ShoppingCart" size={20} className="text-magical-pink" />
-                    <h3 className="font-caveat text-lg font-bold text-magical-pink">🛒 Заказать книгу</h3>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    Эта кнопочка — для самого главного волшебства! Она открывает дверь в мастерскую добрых книгочеев.
-                  </p>
-                  <p className="text-gray-600 text-xs">
-                    Здесь ты можешь превратить свои любимые истории в настоящую, пахнущую типографской краской книгу! Можно выбрать самые-самые лучшие сказки, добавить красивые картинки, и мастера напечатают для тебя сокровище с твёрдой обложкой!
-                  </p>
-                </div>
-                
-                <div className="p-4 bg-white/60 rounded-xl border border-fairy-green/20">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon name="MessageCircle" size={20} className="text-fairy-green" />
-                    <h3 className="font-caveat text-lg font-bold text-fairy-green">TELEGRAM</h3>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-2">
-                    А это — волшебный мостик! Если тебе захочется пообщаться с Волшебным сочинителем не здесь, а в его уютном домике в Телеграме, просто нажми на эту кнопку.
-                  </p>
-                  <p className="text-gray-600 text-xs">
-                    Она мгновенно перенесёт тебя к нему в гости, и вы сможете продолжить сочинять сказки уже там!
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Основная область с диалогом */}
-        <main className="flex-1 flex justify-center items-start px-8 pb-8">
-          <Card className="w-full max-w-3xl h-[360px] bg-white/95 backdrop-blur-lg shadow-2xl border-0 rounded-3xl overflow-hidden">
+        <main className="flex-1 flex justify-center items-center px-8 pb-8">
+          <Card className="w-full max-w-4xl h-[580px] bg-white/95 backdrop-blur-lg shadow-2xl border-0 rounded-3xl overflow-hidden">
             <CardContent className="p-8 h-full flex flex-col">
               {/* Заголовок чата */}
               <div className="flex items-center gap-4 pb-6 border-b-2 border-gray-200">
