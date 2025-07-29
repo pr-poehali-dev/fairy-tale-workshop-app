@@ -112,10 +112,46 @@ export default function Index() {
           </div>
         </header>
 
+        {/* Информационный блок о мастерской */}
+        <div className="px-8 pb-6">
+          <Card className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm shadow-lg border-0 rounded-2xl">
+            <CardContent className="p-6">
+              <div className="text-center mb-4">
+                <h2 className="font-caveat text-2xl font-bold text-enchanted-purple mb-2">
+                  Добро пожаловать в волшебную мастерскую! ✨
+                </h2>
+                <p className="text-gray-700 font-sans leading-relaxed">
+                  Здесь создаются персональные сказки для ваших малышей! Просто общайтесь с нашим сочинителем в диалоговом окне ниже.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div className="text-center p-3 bg-white/50 rounded-xl">
+                  <Icon name="BookOpen" size={24} className="mx-auto mb-2 text-enchanted-purple" />
+                  <h3 className="font-semibold text-enchanted-purple mb-1">Твои сказки</h3>
+                  <p className="text-gray-600">Библиотека созданных сказок. Читайте, скачивайте, делитесь в WhatsApp, Telegram или отправляйте по почте.</p>
+                </div>
+                
+                <div className="text-center p-3 bg-white/50 rounded-xl">
+                  <Icon name="ShoppingCart" size={24} className="mx-auto mb-2 text-magical-pink" />
+                  <h3 className="font-semibold text-magical-pink mb-1">Заказать книгу</h3>
+                  <p className="text-gray-600">Превратите ваши сказки в красивую печатную книгу с иллюстрациями на качественной бумаге.</p>
+                </div>
+                
+                <div className="text-center p-3 bg-white/50 rounded-xl">
+                  <Icon name="MessageCircle" size={24} className="mx-auto mb-2 text-fairy-green" />
+                  <h3 className="font-semibold text-fairy-green mb-1">Телеграм</h3>
+                  <p className="text-gray-600">Переход к нашему Telegram-боту для создания сказок прямо в мессенджере.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Основная область с диалогом */}
-        <main className="flex-1 flex justify-center items-center px-8 pb-8">
-          <Card className="w-full max-w-5xl h-[650px] bg-white/95 backdrop-blur-lg shadow-2xl border-0 rounded-3xl overflow-hidden">
-            <CardContent className="p-8 h-full flex flex-col">
+        <main className="flex-1 flex justify-center items-start px-8 pb-8">
+          <Card className="w-full max-w-3xl h-[480px] bg-white/95 backdrop-blur-lg shadow-2xl border-0 rounded-3xl overflow-hidden">
+            <CardContent className="p-6 h-full flex flex-col">
               {/* Заголовок чата */}
               <div className="flex items-center gap-4 pb-6 border-b-2 border-gray-200">
                 <div className="w-14 h-14 bg-gradient-to-r from-magical-pink to-enchanted-purple rounded-full flex items-center justify-center shadow-lg">
