@@ -153,7 +153,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h2 className="font-caveat text-3xl font-bold text-enchanted-purple">Сказочник</h2>
-                  <p className="text-lg text-gray-600 font-sans">Создаём сказки вместе ✨</p>
+                  <p className="text-lg text-gray-600 font-sans">Здравствуй, юный мечтатель! Ты попал в волшебное место, где рождаются самые удивительные истории. Наша «Мастерская сказок» — это сказочный уголок в интернете, где живёт Ио - сказочник. Это добрый дух, который умеет придумывать приключения, и он очень хочет подружиться с тобой!</p>
                 </div>
               </div>
 
