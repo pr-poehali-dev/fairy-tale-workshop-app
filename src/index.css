@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
+:root {
+  --magical-pink: #ff6b9d;
+  --fairy-green: #4ecdc4;
+  --enchanted-purple: #8b5cf6;
+  --golden: #ffd700;
+  --warm-orange: #ff8a65;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
