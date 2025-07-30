@@ -136,7 +136,7 @@ export default function Index() {
                 <Icon name="BookOpen" size={20} className="mr-3" />
                 Твои сказки
               </Button>
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-enchanted-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-enchanted-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
                 <div className="font-semibold text-enchanted-purple mb-1">
                   📖 Твои сказки
                 </div>
@@ -153,7 +153,7 @@ export default function Index() {
                 <Icon name="ShoppingCart" size={20} className="mr-3" />
                 Заказать книгу
               </Button>
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-magical-pink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-magical-pink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
                 <div className="font-semibold text-magical-pink mb-1">
                   🛒 Заказать книгу
                 </div>
@@ -173,7 +173,7 @@ export default function Index() {
                 <Icon name="MessageCircle" size={20} className="mr-3" />
                 Телеграм
               </Button>
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-fairy-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-fairy-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
                 <div className="font-semibold text-fairy-green mb-1">
                   TELEGRAM
                 </div>
@@ -182,6 +182,24 @@ export default function Index() {
                   Волшебным сочинителем в его уютном домике в Телеграме, эта
                   кнопка мгновенно перенесёт тебя к нему в гости, и вы сможете
                   продолжить сочинять сказки уже там!
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <Button
+                variant="outline"
+                className="bg-golden/20 hover:bg-golden/30 text-enchanted-purple border-2 border-golden font-sans font-semibold text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="Crown" size={20} className="mr-3" />
+                Подписка
+              </Button>
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-4 py-3 bg-white/95 backdrop-blur-sm text-gray-800 text-sm rounded-xl shadow-xl border border-golden/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 w-80">
+                <div className="font-semibold text-golden mb-1">👑 Подписка</div>
+                <div className="text-xs leading-relaxed">
+                  <div className="text-green-600 font-medium mb-1">✅ Подписка активна</div>
+                  <div>Активирована: 15 июля 2025</div>
+                  <div>Действует до: 15 августа 2025</div>
+                  <div className="mt-2 text-gray-600">Безлимитные сказки, приоритетная поддержка и ранний доступ к новым функциям!</div>
                 </div>
               </div>
             </div>
